@@ -1,0 +1,89 @@
+/* Container Styling */
+.journey-container {
+  padding: 50px;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.journey-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Timeline Styling */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #ddd;
+  z-index: 0;
+}
+
+/* Timeline Item */
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+}
+
+.timeline-year {
+  flex: 0 0 20%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  z-index: 1;
+}
+
+.timeline-content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.timeline-content h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.timeline-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline {
+    width: 90%;
+  }
+
+  .timeline-year {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content {
+    font-size: 0.9rem;
+  }
+}
